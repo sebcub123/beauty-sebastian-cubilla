@@ -37,6 +37,7 @@
     height: 35px; }
 
 .main-index {
+  height: 80%;
   margin-top: 10px; }
   .main-index section {
     width: 100%;
@@ -172,21 +173,17 @@
             color: #f8077f; }
 
 .main-sucursales {
+  margin-top: 10px;
   background-color: #f8389817;
   display: block; }
-
-.txtSuc h1,
-.txtSuc h3 {
-  text-align: center; }
-
-.txtSuc h1 {
-  font-size: 36px; }
-
-.txtSuc h3 {
-  font-size: 24px; }
-
-.map {
-  width: 100%; }
+  .main-sucursales .txtSuc h1 {
+    text-align: center;
+    font-size: 36px; }
+  .main-sucursales .txtSuc h3 {
+    text-align: center;
+    font-size: 24px; }
+  .main-sucursales .map {
+    width: 100%; }
 
 .main-contacto {
   margin-top: 20px;
@@ -261,7 +258,7 @@
 
 @media (max-width: 1024px) {
   .main-index {
-    height: 80vh; }
+    height: 80%; }
   .carouselExampleIndicators {
     margin-top: 2px;
     display: flex;
@@ -269,6 +266,9 @@
 
 @media (max-width: 850px) {
   .main-tienda .grid-contenedor {
+    grid-template-columns: repeat(2, 1fr) !important; }
+  .main-index .container-intro-index {
+    display: grid;
     grid-template-columns: repeat(2, 1fr) !important; } }
 
 @media (max-width: 650px) {
@@ -280,7 +280,8 @@
       display: none !important; }
     .main-index .img-oculta img {
       display: flex !important;
-      width: 100%; }
+      width: 100%;
+      margin-top: 15px; }
   .main-nosotros .contTxt {
     width: 50%;
     margin: 0 auto; }
@@ -302,6 +303,9 @@
       width: 180px; }
     .header .nav-form {
       justify-content: start !important; }
+  .main-index .container-intro-index {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important; }
   .main-sucursales {
     display: block;
     margin-top: 20px; }

@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
     .main-index {
-        height: 80vh;
+        height: 80%;
     }
 
     .carouselExampleIndicators {
@@ -11,10 +11,17 @@
 
 }
 
-@media (max-width: 850px){
+@media (max-width: 850px) {
     .main-tienda {
 
-        .grid-contenedor{
+        .grid-contenedor {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+
+    .main-index {
+        .container-intro-index {
+            display: grid;
             grid-template-columns: repeat(2, 1fr) !important;
         }
     }
@@ -41,6 +48,7 @@
             img {
                 display: flex !important;
                 width: 100%;
+                margin-top: 15px;
             }
 
         }
@@ -57,17 +65,17 @@
 
     .main-tienda {
 
-        .grid-contenedor{
+        .grid-contenedor {
             grid-template-columns: repeat(1, 1fr) !important;
         }
 
         .medios-de {
             display: block;
             text-align: center;
-           
-    
-            .medios-tarjeta{
-        
+
+
+            .medios-tarjeta {
+
                 border-left: none;
                 border-right: none;
             }
@@ -78,7 +86,7 @@
         justify-content: start !important;
     }
 
-    
+
 }
 
 @media (max-width: 450px) {
@@ -96,6 +104,12 @@
         }
     }
 
+    .main-index {
+        .container-intro-index {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr) !important;
+        }
+    }
 
 
 
