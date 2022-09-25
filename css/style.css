@@ -8,14 +8,15 @@
 
 .header {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  box-shadow: 1px 3px 5px #f8077f; }
   .header a {
     font-size: 18px !important; }
     .header a:hover {
       color: #f8077f !important;
       font-weight: bolder; }
   .header img {
-    width: 200px;
+    width: 175px;
     padding: 10px;
     justify-content: center; }
   .header .btn {
@@ -32,15 +33,43 @@
       margin: 10px; }
     .header nav .nav-item {
       padding: 10px; }
+  .header .d-flex {
+    height: 35px; }
 
-.main-index h1 {
-  display: none; }
-
-.main-index .carousel {
-  transition: all; }
-
-.main-index .img-oculta img {
-  display: none; }
+.main-index {
+  margin-top: 10px; }
+  .main-index section {
+    width: 100%;
+    margin: 0 auto; }
+    .main-index section .intro-index {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+      text-align: center; }
+      .main-index section .intro-index h1 strong {
+        color: #f8077f; }
+    .main-index section .container-intro-index {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      list-style: none;
+      width: 70%;
+      margin: 0 auto;
+      justify-items: center; }
+      .main-index section .container-intro-index .lista-container {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 180px;
+        height: auto;
+        margin-top: 10px;
+        text-align: center;
+        font-family: none; }
+  .main-index .carousel {
+    transition: all;
+    margin-top: 15px; }
+  .main-index .img-oculta img {
+    display: none; }
 
 .main-nosotros img {
   width: 100%;
